@@ -29,4 +29,17 @@ body {
   justify-content: space-between;
   position: relative;
   margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+/* Bule Line */
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 50%;
 }
