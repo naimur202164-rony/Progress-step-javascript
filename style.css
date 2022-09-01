@@ -69,4 +69,31 @@ body {
   align-items: center;
   justify-content: center;
   border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #3498db;
+}
+
+.btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background: var(--line-border-empty);
+  cursor: not-allowed;
 }
