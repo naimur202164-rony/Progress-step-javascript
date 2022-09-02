@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 :root {
-  --line-border-fill: #3498db;
+  --line-border-fill: #34db63;
   --line-border-empty: #e0e0e0;
 }
 
@@ -48,7 +48,7 @@ body {
 /* Bule Line */
 
 .progress {
-  background-color: #3498db;
+  background-color: #34db90;
   position: absolute;
   transform: translateY(-50%);
   z-index: -1;
@@ -62,7 +62,7 @@ body {
 .circle {
   background-color: #fff;
   color: #999;
-  border-radius: 50%;
+  /* border-radius: %; */
   height: 30px;
   width: 30px;
   display: flex;
@@ -73,7 +73,7 @@ body {
 }
 
 .circle.active {
-  border-color: #3498db;
+  border-color: #34db63;
 }
 
 .btn {
