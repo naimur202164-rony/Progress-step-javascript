@@ -1,13 +1,17 @@
 console.log("Progrss container");
-const progress=document.getElementById('progress');
-const prev=document.getElementById('prev');
-const next=document.getElementById('next');
-const circle=document.querySelectorAll('.circle')
-console.log(progress)
+const progress = document.getElementById("progress");
+const prev = document.getElementById("prev");
+const next = document.getElementById("next");
+const circle = document.querySelectorAll(".circle");
+console.log(progress);
 
+let currentActive = 1;
+next.addEventListener("click", () => {
+  currentActive++;
+  console.log(currentActive);
+  if(currentActive>circle.length){
+    currentActive=circle.length
+  }
 
-let currentActive=1;
-next.addEventListener('click',()=>{
-    currentActive++;
-    console.log(currentActive);
-})
+  console.log(currentActive);
+});
