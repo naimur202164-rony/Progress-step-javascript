@@ -29,3 +29,19 @@ prev.addEventListener("click", () => {
     console.log(currentActive);
   });
   
+
+  const update=()=>{
+    circle.forEach((circle,index)=>{
+        if(index<currentActive){
+            circle.classList.add('active')
+        }else{
+            circle.classList.remove('active')
+        }
+    })
+
+
+
+    const actives=document.querySelectorAll('.active')
+
+    progress.style.width=(actives.length / circle.length)*100 +'%'
+  }
